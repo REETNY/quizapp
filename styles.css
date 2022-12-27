@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-body{
+    width: 450px;
+    background-color: rgb(243, 235, 235);
+    display: grid;
+    padding-top: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.question-cont{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+input[type="radio"]{
+    border: none;
+    font-size: 20px;
+
+}
+
+ul{
+    padding: 0 20px;
+    display: grid;
+    row-gap: 18px;
+    margin-bottom: 60px;
+}
+
+li{
+    display: flex;
+    column-gap: 15px;
+    cursor: pointer;
+}
+
+.detail{
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#btn, .startBtn{
+    width: 100%;
+    display: block;
+    height: 60px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    background: rgb(161, 33, 161);
+}
+
+.startBtn{
+    background-color: rgb(39, 211, 39);
+    border-radius: 30px;
+    width: 30%;
+}
+
+.startBtn:hover{
+    background-color: rgba(39, 211, 39, .7);
+}
+
+.startBtn:focus{
+    background-color: rgba(39, 211, 39, .7);
+}
+
+.startBtn:active{
+    background-color: rgba(39, 211, 39, .7);
+    word-spacing: 10px;
+}
+
+#btn:hover{
+    background-color: rgba(161, 33, 161, .7);
+}
+
+#btn:focus{
+    background-color: rgba(161, 33, 161, .7);
+}
+
+#btn:active{
+    background-color: rgba(161, 33, 161, .7);
+    word-spacing: 10px;
+}
+
+.reload{
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(233, 66, 54);
+
+}
+
+.restart{
+    width: 45%;
+    height: 40px;
+    border: none;
+    background-color: greenyellow;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+
+.end{
+    width: 48%;
+    height: 40px;
+    border: none;
+    background-color: rgb(236, 36, 36);
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+
+.btnCont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .quiz-body{
+        width: 90%;
+    }
+}
